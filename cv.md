@@ -13,3 +13,21 @@
 
 
 **Code Examples**: [take a look at my GitHub profile](https://github.com/arnikill)
+
+### Languages ###
+<table>
+ <th>Language</th>
+ <th>Level</th>
+ <tr>
+   <td>English</td>
+   <td>Upper-Intermediate</td>
+ </tr>
+ <tr>
+   <td>Kazakh</td>
+   <td>Upper-Intermediate</td>
+ </tr>
+ <tr>
+   <td>Russian</td>
+   <td>Advanced</td>
+ </tr>
+</table>
