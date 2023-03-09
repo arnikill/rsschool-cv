@@ -33,6 +33,87 @@
                 </ul>
             </nav>
         </header>
+        <main>
+
+            <section class="about-me">
+                <div class="about-me-my-photo">
+                    <img src="./assets/aliyaa.png" alt="">
+                </div>
+                <div class="about-me-information">
+                    <h1>Tusupkalieva Aliya</h1>
+                    <p>
+                        I am 18 years old, graduating from the 11th grade. I am developing in various fields such as:
+                        programming (frontend-development),art and music
+                    </p>
+                </div>
+            </section>
+
+            <section class="skills">
+                <h3>Skills</h3>
+                <p>
+                    knowledge of html, css and a bit of js
+                </p>
+            </section>
+
+            <section class="code-example">
+                <h3>code-example</h3>
+                <pre><code>
+                    let load_facades_interiors = (e) => {
+                        for (let i = 1; i <= 16; i++) {
+                            let facade = `<div class="facade">
+                            <a href="/assets/img/facades/facade${String(i).padStart(2, '0')}.jpg">
+                                <img src="/assets/img/facades/facade${String(i).padStart(2, '0')}.jpg" alt="facade">
+                            </a>
+                        </div>`
+                            facades.innerHTML += facade
+                        }
+                    
+                        for (let i = 1; i <= 3; i++) {
+                            let interior = `<div class="interior">
+                            <a href="/assets/img/interiors/interior${String(i).padStart(2, '0')}.jpg">
+                                <img src="/assets/img/interiors/interior${String(i).padStart(2, '0')}.jpg" alt="interior">
+                            </a>
+                        </div>`
+                            interiors.innerHTML += interior
+                        }
+                    }
+                </code></pre>
+            </section>
+
+            <section class="languages">
+                <h3>Languages</h3>
+                <table class="languages-table">
+                    <th>Language</th>
+                    <th>Level</th>
+                    <tr>
+                        <td>English</td>
+                        <td>Upper-Intermediate</td>
+                    </tr>
+                    <tr>
+                        <td>Kazakh</td>
+                        <td>Upper-Intermediate</td>
+                    </tr>
+                    <tr>
+                        <td>Russian</td>
+                        <td>Advanced</td>
+                    </tr>
+                </table>
+            </section>
+
+            <section class="contacts">
+                <h3>contacts with me</h3>
+                <ul>
+                    <li><i class="bi bi-telephone"></i> Phone number: <a
+                            href="tel:+7(778)925-90-03"><strong>+7(747)-588-78-77</strong></a></li>
+                    <li><i class="bi bi-envelope"></i> Email:
+                        <a
+                            href="mailto:tusupkalievaaliya921@gmail.com"><strong>tusupkalievaaliya921@gmail.com</strong></a>
+                    </li>
+                    <li><i class="bi bi-Whatsapp"></i> Whatsapp: <a href=" https://wa.me/87475887877"></a></li>
+                </ul>
+            </section>
+
+        </main>
     </div>
 </body>
 
