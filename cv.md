@@ -10,8 +10,6 @@
 
 ###  skills ###
 *knowledge of html, css and a bit of js*
-
-
 **Code Examples**: [take a look at my GitHub profile](https://github.com/arnikill)
 
 ### Languages ###
