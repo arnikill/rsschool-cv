@@ -11,11 +11,11 @@
 </head>
 
 <body>
-    <div class="container">
+    <header>
         <div class="wrapper">
-            <header>
+            <div class="container">
                 <div class="header-logo"><a class="header-logo-link" href="#"><img class="header-logo-img"
-                            src="./assets/img/rs_school_js.svg" alt="logo" width="100"></a></div>
+                            src="./assets/rs_school_js.svg" alt="logo" width="100"></a></div>
                 <nav class="header-menu">
                     <ul class="header-menu-list">
                         <li class="header-menu-list-item">
@@ -25,7 +25,7 @@
                             <a class="header-menu-list-link" href="#skills">skills</a>
                         </li>
                         <li class="header-menu-list-item">
-                            <a class="header-menu-list-link" href="#code-examples">code examples</a>
+                            <a class="header-menu-list-link" href="#code-examples">code-examples</a>
                         </li>
                         <li class="header-menu-list-item">
                             <a class="header-menu-list-link" href="#languages">languages</a>
@@ -35,99 +35,119 @@
                         </li>
                     </ul>
                 </nav>
-            </header>
-            <main>
-
-                <section class="about-me">
-                    <div class="about-me-my-photo">
-                        <img src="./assets/aliyaa.png" alt="">
-                    </div>
-                    <div class="about-me-information">
-                        <h1>Tusupkalieva Aliya</h1>
-                        <p>
-                            I am 18 years old, graduating from the 11th grade. I am developing in various fields such
-                            as:
-                            programming (frontend-development),art and music
-                        </p>
-                    </div>
-                </section>
-
-                <section class="skills">
-                    <h3>Skills</h3>
-                    <p>
-                        knowledge of html, css and a bit of js
-                    </p>
-                </section>
-
-                <section class="code-example">
-                    <h3>code-example</h3>
-                    <pre><code>
-                    let load_facades_interiors = (e) => {
-                        for (let i = 1; i <= 16; i++) {
-                            let facade = `<div class="facade">
-                            <a href="/assets/img/facades/facade${String(i).padStart(2, '0')}.jpg">
-                                <img src="/assets/img/facades/facade${String(i).padStart(2, '0')}.jpg" alt="facade">
-                            </a>
-                        </div>`
-                            facades.innerHTML += facade
-                        }
-                    
-                        for (let i = 1; i <= 3; i++) {
-                            let interior = `<div class="interior">
-                            <a href="/assets/img/interiors/interior${String(i).padStart(2, '0')}.jpg">
-                                <img src="/assets/img/interiors/interior${String(i).padStart(2, '0')}.jpg" alt="interior">
-                            </a>
-                        </div>`
-                            interiors.innerHTML += interior
-                        }
-                    }
-                </code></pre>
-                </section>
-
-                <section class="languages">
-                    <h3>Languages</h3>
-                    <table class="languages-table">
-                        <th>Language</th>
-                        <th>Level</th>
-                        <tr>
-                            <td>English</td>
-                            <td>Upper-Intermediate</td>
-                        </tr>
-                        <tr>
-                            <td>Kazakh</td>
-                            <td>Upper-Intermediate</td>
-                        </tr>
-                        <tr>
-                            <td>Russian</td>
-                            <td>Advanced</td>
-                        </tr>
-                    </table>
-                </section>
-
-                <section class="contacts">
-                    <h3>contacts with me</h3>
-                    <ul>
-                        <li><i class="fa fa-telephone"></i> Phone number: <a
-                                href="tel:+7(778)925-90-03"><strong>+7(747)-588-78-77</strong></a></li>
-                        <li><i class="fas fa-envelope"></i> Email:
-                            <a
-                                href="mailto:tusupkalievaaliya921@gmail.com"><strong>tusupkalievaaliya921@gmail.com</strong></a>
-                        </li>
-                        <li><i class="fa fa-whatsapp"></i> Whatsapp: <a href=" https://wa.me/87475887877"></a></li>
-                    </ul>
-                </section>
-
-            </main>
-            <footer>
-                <div class="f-logo">
-                    <div class="footer-logo"><a class="footer-logo-link" href="https://rs.school/js/"><img class="footer-logo
-                            -img" src="img/rs_school_js.svg" alt="footer-logo" width="80"></a>
-                    </div>
-                    <div class="f-l-text">&copy; Tusupkalieva Aliya <time>2023</time>
-                    </div>
-            </footer>
+            </div>
         </div>
-    </div>
+    </header>
+    <main>
+
+        <section class="about-me">
+            <div class="wrapper">
+                <div class="about-me-my-photo">
+                    <img src="./assets/aliyaa.png" alt="">
+                </div>
+                <div class="about-me-information">
+                    <h1>Tusupkalieva Aliya</h1>
+                    <p>
+                        I am 18 years old, graduating from the 11th grade. I am developing in various fields
+                        such
+                        as:
+                        programming (frontend-development),art and music
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills">
+            <div class="wrapper">
+                <h3>Skills</h3>
+                <p>
+                    knowledge of html, css and a bit of js
+                </p>
+            </div>
+        </section>
+
+        <section class="code-example">
+            <div class="wrapper">
+                <h3>code-example</h3>
+                <pre><code>
+                    // Event Listeners
+                    spheres_tab.forEach(el => {
+                        el.addEventListener("click", change_sphere)
+                    });
+                    
+                    document.addEventListener("DOMContentLoaded", load_facades_interiors);
+                    
+                    
+                    // Tectures Glider
+                    let bricks_glide = new Glide('.glide', {
+                        type: 'carousel',
+                        perView: 3
+                    })
+                    bricks_glide.on('mount.before', load_bricks)
+                    bricks_glide.mount()
+               </code></pre>
+            </div>
+        </section>
+
+        <section class="languages">
+            <div class="wrapper">
+                <h3>Languages</h3>
+                <table class="languages-table">
+
+                    <th>Language</th>
+                    <th>Level</th>
+                    <tr>
+                        <td>English</td>
+                        <td>Upper-Intermediate</td>
+                    </tr>
+                    <tr>
+                        <td>Kazakh</td>
+                        <td>Upper-Intermediate</td>
+                    </tr>
+                    <tr>
+                        <td>Russian</td>
+                        <td>Advanced</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <section class="contacts">
+            <div class="wrapper">
+                <h3>contacts with me</h3>
+                <ul class="my-contacts">
+                    <li><i class="fa fa-mobile"></i> Phone number: <a
+                            href="tel:+7(778)925-90-03"><strong>+7(747)-588-78-77</strong></a></li>
+                    <li><i class="fa fa-envelope"></i> Email:
+                        <a
+                            href="mailto:tusupkalievaaliya921@gmail.com"><strong>tusupkalievaaliya921@gmail.com</strong></a>
+                    </li>
+                    <li><i class="fa fa-whatsapp"></i> Whatsapp:
+                        <a href=" https://wa.me/87475887877"><strong>+7(747)-588-78-77</strong></a>
+
+                    <li><i class="fa fa-github"></i> GitHub: <a
+                            href="https://github.com/arnikill"><strong>arnikill.com</strong></a></li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div class="footer-center">
+            <div class="wrapper">
+                <div class="center-footer-logo"><a class="center-footer-logo-link" href="https://rs.school/js/"><img
+                            class="center-footer-logo-img" src="./assets/rs_school_js.svg" alt="center-logo"
+                            width="80"></a>
+                </div>
+                <div class="footer-center-text">&copy; Tusupkalieva Aliya<time>2023</time>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
 </body>
 
 </html>
