@@ -28,17 +28,7 @@ h3 {
     vertical-align: center;
 }
 
-table {
-    margin-left: 20px;
-    border-collapse: collapse;
-}
 
-table,
-th,
-td {
-    text-align: left;
-    padding: 5px 10px;
-}
 
 tr:nth-child(even) {
     background: rgba(192, 188, 188, 0.1);
@@ -232,28 +222,23 @@ header .wrapper {
     text-align: center;
 }
 
-.languages-table {
-    margin-top: 50px;
-}
-
-table {
-    border-spacing: 0;
-
-}
-
-td {
-    padding: 10px 20px;
+.languages-which-know p {
+    margin-top: 30px;
+    display: flex;
     text-align: center;
-    border-bottom: 1px solid #9f9285;
-    transition: all 0.5s linear;
+    margin-left: 50px;
 }
 
-th {
-    padding: 10px 20px;
-    color: #3D3511;
-    border-bottom: 1px solid #9f9285;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+.languages-which-know p:nth-child(1):hover {
+    color: #1eafe0;
+}
+
+.languages-which-know p:nth-child(2):hover {
+    color: #5741aa;
+}
+
+.languages-which-know p:nth-child(3):hover {
+    color: #e05f1e;
 }
 
 .contacts .wrapper {
